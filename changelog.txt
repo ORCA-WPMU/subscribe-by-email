@@ -1,0 +1,447 @@
+Plugin Name: Subscribe by Email
+Author: WPMU DEV
+Requires at least: 3.5
+Tested up to: 4.7
+
+Change Log:
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+3.5.4 - 2017-02-21
+----------------------------------------------------------------------
+- Fixed: XSS Vulnerability
+- Some minor improvements
+
+3.5.2 2015-02-02
+----------------------------------------------------------------------
+- Add: New filter to filter widget instance on validation
+
+3.5.1 2015-11-17
+----------------------------------------------------------------------
+- Fixed: From email in a subfolder multisite was set to 'no-reply@'
+
+3.5 2015-11-15
+----------------------------------------------------------------------
+- Enhance: Fixed some translations.
+- Enhance: Improved handler to avoid duplicated digests.
+- Enhance: Fixed MySQL 5.6 incompatibility
+- Fixed: Typo in email template.
+- New hooks.
+
+3.4.4 2015/09/15
+----------------------------------------------------------------------
+- Fixed: Fatal error when upgrading from a very old version
+
+3.4.3 2015/08/22
+----------------------------------------------------------------------
+- Fixed: When deleting a site in a multisite the queue table was deleted.
+
+3.4.2 2015/08/11
+----------------------------------------------------------------------
+- Updated widget to WP 4.3 constructor
+
+3.4.1 2015/07/22
+----------------------------------------------------------------------
+- Do not send Metabox was not working properly for immediately sendings.
+
+3.4 2015/07/15
+----------------------------------------------------------------------
+- New: Added meta box to avoid sending single posts
+- Enhanced: Added custom capability
+
+3.3 2015/07/07
+----------------------------------------------------------------------
+- New: Preview template in real time.
+- New: auto opt in attribute in shortcode.
+
+3.2.1 2015/06/08
+----------------------------------------------------------------------
+- Fixed: Full post/excerpt content were not being rendered in digests.
+
+3.2 2015/06/01
+----------------------------------------------------------------------
+- Enhancement: Email templates can now be overriden with custom templates in theme folder.
+- Fixed typos.
+- Fixed several warnings.
+
+3.1.2 2015/04/30
+----------------------------------------------------------------------
+- Added script to scroll down to the shortcode form if there have been errors while processing it.
+
+3.1.1 2015/04/30
+----------------------------------------------------------------------
+- Fixed: Page title when a user subscribes/unsubscribes
+
+3.1 2015/04/20
+----------------------------------------------------------------------
+- Enhancement: Removed old legacy code.
+- Enhancement: Plugin is now faster loading.
+- Fixed: Post types with no taxonomies were not being sent.
+- Added unit tests folder
+
+3.0.3 2015/04/10
+----------------------------------------------------------------------
+- Enhancement: Additional check to avoid duplicated emails.
+- Fixed: TinyMCE Editor button now updated for WordPress 4.1
+
+3.0.2 - 2015/03/16
+----------------------------------------------------------------------
+- Enhancement: When an email fails, error is now displayed in Emails Logs
+- Other minor fixes
+
+3.0.1 - 2015/01/31
+----------------------------------------------------------------------
+- Fixed: Email address missing in notification mail
+
+3.0 - 2015/01/27
+----------------------------------------------------------------------
+- Enhancement: New hooks.
+- Enhancement: Administrators notifications are now sent once the user is confirmed in order to avoid spam.
+- Fixed: Sending emails by taxonomies was not working right.
+- Fixed: When activating in a subsite inside a Network, from email was set wrong.
+- Fixed: Character encoding in subscribe/unsubscribe notices.
+
+2.9.3 - 2015/01/12
+----------------------------------------------------------------------
+- Fixed: Fatal error when deleting custom fields
+
+2.9.2 - 2014/11/27
+----------------------------------------------------------------------
+- Fixing: When creating a new campaign, the max subscriber ID to send was set wrong
+- Enhancement: Added actions to finish campaigns manually
+
+2.9.1 - 2014/11/26
+----------------------------------------------------------------------
+- Fixed: Queue table was not created in some cases.
+- Fixed: Sites in multisite were not sending their own queue but other sites queue
+- Other minor fixes
+
+2.9 - 2014/11/03
+----------------------------------------------------------------------
+- Enhancement: Added queue screen that allows more control over emails that are going to be sent.
+- Enhancement: Trigger next batch of emails with a button.
+- Enhancement: Many performance improvements
+- Enhancement: UI/Icons Improvements
+- Enhancement: Added more filters.
+- Fixed: Settings needed to be saved twice when the plugin was activated.
+- Other minor fixes.
+
+2.8.3 - 2014/08/29
+----------------------------------------------------------------------
+- Preview email was only sent if the email was a subscriber.
+
+2.8.2 - 2014/08/08
+----------------------------------------------------------------------
+Fixed: Added trailing slash to Unsubscribe-List header
+Enhanced: Logo uploader updated to WP 3.5+ Media Uploader
+Enhanced: Added more hooks
+
+2.8.1.2 - 2014/08/06
+----------------------------------------------------------------------
+Fixed: Fatal error when downloading CSV
+Fixed: warning on manage subscriptions page
+Fixed: Manage subscriptions page link might appear in emails even if there wasn't any selected
+Fixed: Removing text inserted by mistake in network settings
+
+2.8.1.1 - 2014/07/08
+----------------------------------------------------------------------
+- Fixed: Bug that did not let update subscribers metadata
+
+2.8.1 - 2014/07/05
+----------------------------------------------------------------------
+- Fixed: Upgrade system in 2.8 was failing in some cases.
+- Disable email edition to avoid sendings incoherences
+
+2.8 - 2014/05/27
+----------------------------------------------------------------------
+New: Subscriptions/subscriptions_meta are not used anymore (though old tables are still available).
+New: Subscribers moved to Posts table.
+New: Improved subscribers list styles.
+New: Network queue table for emails. Emails are not sent immediately any more but they are enqueued to avoid duplicated sendings.
+New: Added more filters
+Improve: Plugin loads now much faster.
+Improve: Logo uploader comatible with 3.8 media uploader.
+Improve: Lot of code removed/refactored.
+Added: uninstall functionality
+Other minor improvements/fixes
+
+2.7.5 - 2014/04/17
+----------------------------------------------------------------------
+- Updated for WordPress 3.9
+
+2.7.4 - 2014/04/10
+----------------------------------------------------------------------
+* Fixing upgrade bug on 2.7. In some cases the From Sender is replaced by the main site option
+* Fixed SSL issue
+
+2.7.3 - 2014/04/03
+----------------------------------------------------------------------
+* Fixed: Notice when editing post
+* Fixed: WP Editor Icon in front
+
+2.7.2 - 2014/04/02
+----------------------------------------------------------------------
+* Fixed: Shortcode layout
+* Added 3.8 shortcode icon in WP Editor (with backward compatibility)
+
+2.7.1 - 2014/03/27
+----------------------------------------------------------------------
+* Fixed: Fatal error on single sites while upgrading plugin
+
+2.7 - 2014/03/27
+----------------------------------------------------------------------
+* Mail batches, From Email and Log File Settings have been moved to Network Admin in multisites.
+* Removed slug field from custom fields.
+* Added screen options in subscribers page.
+* Improved performance
+* Fixed warning.
+* Fixed: User Email could be empty on administrator email notices.
+
+2.6.2 - 2014/03/03
+----------------------------------------------------------------------
+* Fixed typo on unsubscribe screen.
+
+2.6.1 - 2014/02/22
+----------------------------------------------------------------------
+* Fixed warning on Sent emails page
+
+2.6 - 2014/02/21
+----------------------------------------------------------------------
+* Improved sending system
+* Added shortcode
+* Added more positions settings for Follow Button
+* Added full content/excerpt in digests setting
+* Other minor fixes
+
+2.5.1 - 2014/01/14
+----------------------------------------------------------------------
+* Fixed raw HTML format for some email providers.
+* AJAX in widget restored
+* Custom fields were not being added when subscribing on widget.
+* Forcing charset due to an issue on RTL languages.
+* Reduced time between batches.
+* CSV feature simplified
+* Plugin now resends the confirmation email if the subscriber tries to subscribe again and is not yet confirmed
+
+
+2.5 - 2013/12/18
+----------------------------------------------------------------------
+* Emails are now sent with HTML + plain text support
+* New feature: Custom fields for each user.
+* Additional checks to prevent duplicated emails.
+* widget CSS customizer.
+* Changed site_url for home_url.
+* Some styles improved.
+* Added actions/filters.
+* Less files loading now on startup.
+* Export page merged into subscribers page.
+* New feature: Time selection on weekly digests.
+* Added post meta to identify which posts have been sent already.
+* Added dark/light schemas for follow button.
+* Some Code reorganized.
+* Added cache system.
+* Easier and faster queries when getting subscribers.
+* Preventing delete logs when log ID does not exist.
+* Fixed bug in content generator.
+* More small improvements.
+
+2.4.9 - 2013/11/13
+----------------------------------------------------------------------
+* Fixed memory issue with logs.
+* Improved performance
+* Logs are now saved in files
+* New setting: Set how often are the logs erased.
+* More details in logs.
+* Minor fixes.
+
+2.4.8 - 2013/10/31
+----------------------------------------------------------------------
+* Fixed warning on activation when the plugin tables are empty
+
+2.4.7 - 2013/10/21
+----------------------------------------------------------------------
+* Removing default value from a text column in DB 
+* Fixed "Inmediately" typo
+* CPTs without any taxonomy were not being sent
+* Fixed error on sending categories that were not saved yet
+* Splitted functionality from templates and content generator
+* Improved logging system
+* Improved logs screen layout 
+* Added new column on subscribers table 
+* Fixed issue with %title% wildcard
+
+2.4.6 - 2013/09/23
+----------------------------------------------------------------------
+* Fixed fatal error for single sites
+
+2.4.5 - 2013/09/23
+----------------------------------------------------------------------
+* Plugin was sending lots of mails when the digest was weekly scheduled
+
+2.4.4 - 2013/09/13
+----------------------------------------------------------------------
+* Fixed notices when creating a new blog
+* Fixed typo that wasn't allowing to add users
+* Improved Settings System
+
+2.4.3 - 2013/09/11
+----------------------------------------------------------------------
+* Fixed error on categories filter
+
+2.4.2 - 2013/09/06
+----------------------------------------------------------------------
+* Fixed error on categories filter
+
+2.4.1 - 2013/08/30
+----------------------------------------------------------------------
+* Removed debug code inserted by mistake
+
+2.4 - 2013/08/29
+----------------------------------------------------------------------
+* Improved performance (settings just loaded when needed)
+* Added Confirm Subscription action in Subscribers Table
+* Added subscribers counter in widget
+* Added "Never" option in frequency digest sending
+* New settings: Logo width( with Slider ), notifications, From Sender text in header
+* New feature: Follow button
+* New feature: Send digests based on categories
+* Added new tab in Settings page to set the mail contents
+* Added auto-opt in options.
+* Set the subscribed placeholder in widget
+
+2.3 - 2013/07/26
+----------------------------------------------------------------------
+* Texts improved
+* Reduced time between batches to 30min
+* Improved log table
+* Fixed error while sending batches
+* Fixed minor bugs
+* Changed template system
+* Improved mails system performance
+* Fixed error when sending different post types on weekly or daily digest
+* Added new Subscription Management screen
+* Fixed bug when saving settings
+* Added languages files
+* Fixed JS conflict
+* Fixed error when sending a test email.
+
+
+2.2 - 2013/07/18
+----------------------------------------------------------------------
+* Added auto-opt In option when importing and adding new subscribers.
+* Added auto-opt In option in widget
+* New Post Types Setting
+* Improved some captions
+* Improved Settings page, splitted into tabs
+* Added new subscribe email customization text field
+* Fixed export CSV date
+* Minor bug fixing
+
+2.1.1 - 2013/07/06
+----------------------------------------------------------------------
+* Removed debugging left by mistake
+
+2.1 - 2013/07/06
+----------------------------------------------------------------------
+* Fixed Fatal error for Single Sites
+
+2.0 - 2013/07/05
+----------------------------------------------------------------------
+- Plugin completely recoded
+- Added a more customizable template
+- Emails sent in batches controlled by the user.
+- Better styled widget
+- New emails sent log
+- Send mails weekly or daily
+- The plugin sends a confirmation email for each new subscription
+
+1.1.5 - 3/1/2013 - Aaron Edwards
+----------------------------------------------------------------------
+- Fix XSS vulnerability!
+- Style settings buttons
+- Add menu icon
+- Update dashboard notice script
+
+1.1.4.2 - 12/17/2012 - S H Mohanjith
+----------------------------------------------------------------------
+- WordPress 3.5 compatibility
+- Fixed: &amp;nbsp inserted into emails
+- Fixed: short tags inserted into emails
+
+1.1.4.1 - 07/13/2012 - S H Mohanjith
+----------------------------------------------------------------------
+- Cancel URL trailing slash issue
+
+1.1.4 - 05/23/2012 - S H Mohanjith
+----------------------------------------------------------------------
+- Configurable variable AUTHOR_NAME
+- Fixed: LDAP Users are not Auto Subscribed
+- Fixed: CANCEL_URL and redirections
+
+1.1.3 - 05/12/2012 - S H Mohanjith
+----------------------------------------------------------------------
+- Export Subscribers
+- Notification subject configurable
+- Configurable variables BLOGNAME, POST_TITLE, and EXCERPT in subject
+
+1.1.2 - 02/12/2012 - S H Mohanjith
+----------------------------------------------------------------------
+- Make button text a widget option
+- E-mail validation
+- Fixed: Appearance -> Widget; title and text not translatable
+
+1.1.1 - 01/01/2012 - S H Mohanjith
+----------------------------------------------------------------------
+- Fixed: Undefined variables
+- Removed unused Modal Box js and css
+- Usability improvements
+- WordPress 3.3 improvements
+
+1.1.0 - 10/02/2011 - S H Mohanjith
+----------------------------------------------------------------------
+- Fixed: Reschedule before timing out
+- Fixed: Undefined index: action
+
+1.0.9 - 
+----------------------------------------------------------------------
+- Fixed: Image editing issue caused by Subscribe by Email
+
+1.0.8 - 05/13/2011 - S H Mohanjith
+----------------------------------------------------------------------
+- Notification mail as an option
+
+1.0.7 - 05/13/2011 - S H Mohanjith
+----------------------------------------------------------------------
+- Fixed: Authors Name not appearing in email
+
+1.0.6 - 05/13/2011 - S H Mohanjith
+----------------------------------------------------------------------
+- Fixed: Authors Name not appearing in email
+
+1.0.5 - 05/08/2011 - Aaron Edwards
+----------------------------------------------------------------------
+- Fixed encoding for blog names that have quotes in them
+
+1.0.4 - 04/27/2011
+----------------------------------------------------------------------
+- Fixed: Javascript error in IE8
+- Fixed: Search subscriptions
+
+1.0.3 - 18/03/2011
+----------------------------------------------------------------------
+- Fixed: Returns the image code whe image is the first item in a post
+
+1.0.2 - 01/09/2011
+----------------------------------------------------------------------
+- 3.1+ compatibility update
+
+1.0.1 - 06/01/2010
+----------------------------------------------------------------------
+- 3.0+ compatibility update
+
+1.0.0 - 03/31/2010
+----------------------------------------------------------------------
+- Initial Release.
+
+
+403900-1511247847-ai

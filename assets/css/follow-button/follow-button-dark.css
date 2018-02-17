@@ -1,0 +1,85 @@
+/** Tab **/
+.sbe-follow-link {
+	color: #00c5ff;
+	background: #1f242a;
+}
+
+.sbe-follow-link span {
+	background: url("../../images/icon-mail-dark.png") no-repeat -2px -3px;
+}
+
+.sbe-follow-link:hover {
+	color:#FEFEFE;
+}
+
+/** Secondary wrap **/
+#sbe-follow-wrap {
+	background: #1f242a;
+	color: #FFF;
+}
+
+#sbe-follow-wrap h2 {
+}
+
+#sbe-follow-wrap p {
+}
+
+/** Fields **/
+.sbe-follow-form-field-title {
+}
+.sbe-follow-form-field {
+    background: #9C9C9C;
+    border-color: #494949;
+    color: white;
+    outline: none;
+}
+
+.sbe-follow-form-field::-webkit-input-placeholder {
+    color:    #FFF;
+}
+.sbe-follow-form-field:-moz-placeholder {
+    color:    #FFF;
+}
+.sbe-follow-form-field::-moz-placeholder {
+    color:    #FFF;
+}
+.sbe-follow-form-field:-ms-input-placeholder {
+    color:    #FFF;
+}
+
+.sbe-widget-form-field:focus {}
+
+/** Submit button **/
+.sbe-follow-form-submit-container {
+}
+.sbe-follow-form-submit-container .sbe-follow-form-submit {
+	border-top: 1px solid #8a8a8a;
+	background: #505050;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6b6b6b), to(#505050));
+	background: -webkit-linear-gradient(top, #6b6b6b, #505050);
+	background: -moz-linear-gradient(top, #6b6b6b, #505050);
+	background: -ms-linear-gradient(top, #6b6b6b, #505050);
+	background: -o-linear-gradient(top, #6b6b6b, #505050);
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: #ffffff;
+	border-bottom:1px solid black;
+}
+.sbe-follow-form-submit-container .sbe-follow-form-submit:hover {
+   border-top-color: #212121;
+   background: #212121;
+   color: #FFF;
+}
+.sbe-follow-form-submit-container .sbe-follow-form-submit:active {
+   border-top-color: #757575;
+   background: #757575;
+}
+
+/** Errors/updates **/
+.sbe-follow-error {
+	background: #B62B2B;
+	color:white;
+}
+.sbe-follow-updated {}
+
+
+/* 403900-1511247847-ai */
